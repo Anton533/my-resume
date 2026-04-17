@@ -1,0 +1,83 @@
+// MEDIA QUERY MANAGER
+/*
+
+>=390px:   xs - mobile x-small
+>=576px:   sm - mobile small
+>=768px:   md - Tablet portrait
+>=992px:   lg - Tablet landscape
+>=1200px:  xl - Extra large
+>=1440px:  xxl - Extra extra large
+$breakpoint arguement choices:
+- xs
+- sm
+- md
+- lg
+- xl
+- xxl
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == xs {
+    @media only screen and (min-width: $screen-xs) {
+      @content;
+    }
+  } @else if $breakpoint == sm {
+    @media only screen and (min-width: $screen-sm) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media only screen and (min-width: $screen-md) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media only screen and (min-width: $screen-lg) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media only screen and (min-width: $screen-xl) {
+      @content;
+    }
+  } @else if $breakpoint == xxl {
+    @media only screen and (min-width: $screen-xxl) {
+      @content;
+    }
+  } @else {
+    @media only screen and (min-width: $breakpoint) {
+      @content;
+    }
+  }
+}
+
+@mixin respond-max($breakpoint) {
+  @if $breakpoint == xs {
+    @media only screen and (max-width: calc($screen-xs - 1px)) {
+      @content;
+    }
+  } @else if $breakpoint == sm {
+    @media only screen and (max-width: calc($screen-sm - 1px)) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media only screen and (max-width: calc($screen-md - 1px)) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media only screen and (max-width: calc($screen-lg - 1px)) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media only screen and (max-width: calc($screen-xl - 1px)) {
+      @content;
+    }
+  } @else if $breakpoint == xxl {
+    @media only screen and (max-width: calc($screen-xxl - 1px)) {
+      @content;
+    }
+  } @else {
+    @media only screen and (max-width: $breakpoint) {
+      @content;
+    }
+  }
+}

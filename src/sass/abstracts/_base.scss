@@ -1,0 +1,50 @@
+:root {
+  --bg-sidebar: #1a2a3e;
+  --text-white: #ffffff;
+  --text-dark: #333333;
+  --text-gray: #666666;
+  --accent-line: #000000;
+}
+
+$screen-xs: 24.375em;
+$screen-sm: 36em;
+$screen-md: 48em;
+$screen-lg: 62em;
+$screen-xl: 75em;
+$screen-xxl: 90em;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-dark);
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #fefefe;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+address {
+  font-style: normal;
+}

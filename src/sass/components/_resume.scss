@@ -1,0 +1,162 @@
+.resume {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 100%;
+  max-width: 400px;
+  background-color: var(--bg-sidebar);
+  color: var(--text-white);
+  padding: 60px;
+
+  &__profile {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__avatar {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    margin-inline: auto;
+  }
+
+  &__section {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    color: var(--text-white);
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  &__contact-item {
+    margin-bottom: 15px;
+  }
+
+  &__label {
+    display: block;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  &__text,
+  &__link {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-style: normal;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__list-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__list-item::before {
+    content: '•';
+    margin-right: 10px;
+    color: var(--text-white);
+  }
+}
+
+.main-content {
+  flex: 1;
+  padding: 50px 50px;
+  color: var(--text-dark);
+  background-color: #fefefe;
+
+  &__header {
+    margin-block-end: 85px;
+  }
+
+  &__name {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-block-end: 20px;
+  }
+
+  &__profession {
+    font-size: 1.5rem;
+    color: var(--text-gray);
+  }
+}
+
+.section {
+  margin-bottom: 40px;
+
+  &__title {
+    font-size: 1.8rem;
+    border-bottom: 3px solid var(--accent-line);
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  &__content {
+    ul,
+    ol {
+      margin-block-start: 5px;
+      margin-inline-start: 30px;
+    }
+  }
+}
+
+.experience,
+.education {
+  margin-bottom: 30px;
+}
+
+.experience__header,
+.education__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.experience__role,
+.education__degree {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.experience__company,
+.education__school {
+  color: var(--text-gray);
+  font-style: italic;
+}
+
+.experience__date,
+.education__date {
+  font-size: 0.9rem;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+.experience__details {
+  a {
+    text-decoration: none;
+  }
+}
+
+.experience__details li {
+  // margin-inline-start: 30px;
+  margin-bottom: 8px;
+}
