@@ -2,28 +2,28 @@
 <html lang="uk">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&family=Roboto:wght@100..900&display=swap"
     rel="stylesheet">
 
-  <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/main.css">
 
   <title>Anton Omelianenko - Front-End Developer Resume</title>
-  <link rel="icon" type="image/svg+xml" href="/img/icons/test-favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="/img/icons/test-favicon.svg">
 </head>
 
 <body>
   <div class="resume">
     <aside class="resume__sidebar sidebar">
       <section class="sidebar__section">
-        <h2 class="sidebar__title">Contact</h2>
+        <h2 class="sidebar__title">Contacts</h2>
         <address class="sidebar__address">
           <div class="sidebar__contact-item">
             <span class="sidebar__label">Address</span>
@@ -53,8 +53,8 @@
       <section class="sidebar__section">
         <h2 class="sidebar__title">Languages</h2>
         <ul class="sidebar__list">
-          <li class="sidebar__list-item">Ukrainian - native</li>
-          <li class="sidebar__list-item">English - A2</li>
+          <li class="sidebar__list-item">Ukrainian – native</li>
+          <li class="sidebar__list-item">English – A2</li>
         </ul>
       </section>
     </aside>
@@ -66,36 +66,25 @@
       </header>
 
       <section class="main-content__section section">
-        <h2 class="section__title">Profile</h2>
+        <h2 class="section__title">Summary</h2>
         <div class="section__content">
-          <p>
-            I am a highly motivated front-end developer with a passion for creating engaging user experiences.
-          </p>
-
           <ul>
             <li>
-              Good self-management skills; highly organized and able to prioritize
+              Strong command of HTML5 and CSS3.
             </li>
             <li>
-              Able to stay focused in distracting environments
+              Hands-on experience with SASS.
             </li>
             <li>
-              Strong initiative and motivated to take ownership
+              Ability to build websites that work smoothly across different browsers (pixel perfect), adapt to various
+              screen sizes, and
+              include responsive mobile layouts.
             </li>
             <li>
-              Meticulous attention to detail
+              Confident use of modern JavaScript (ES6+).
             </li>
             <li>
-              Intermediate to advanced knowledge of web technologies and browsers
-            </li>
-            <li>
-              Advanced understanding of CSS, HTML & Javascript
-            </li>
-            <li>
-              Passion for technology and working knowledge of industry landscape
-            </li>
-            <li>
-              HTML5 / CSS3 makeup (adaptive, pixel perfect)
+              Competence in handling and managing DOM events.
             </li>
           </ul>
         </div>
@@ -108,9 +97,11 @@
             <div class="experience__header">
               <div>
                 <h3 class="experience__role">Web Developer</h3>
-
               </div>
-              <time class="experience__date">Mar 2024 – Apr 2026</time>
+              <div>
+                <time class="experience__date" datetime="2024-03">Mar 2024</time> –
+                <time class="experience__date" datetime="2026-04">Apr 2026</time>
+              </div>
             </div>
             <ul class="experience__details">
               <li>Developed frontend for WP developers</li>
@@ -125,7 +116,10 @@
               <div>
                 <h3 class="experience__role">Web Developer (Freelance)</h3>
               </div>
-              <time class="experience__date">May 2023 – Mar 2024</time>
+              <div>
+                <time class="experience__date" datetime="2023-05">May 2023</time> –
+                <time class="experience__date" datetime="2024-03">Mar 2024</time>
+              </div>
             </div>
             <ul class="experience__details">
               <li>
@@ -140,44 +134,89 @@
         <h2 class="section__title">Projects</h2>
         <div class="section__content">
           <article class="experience">
-            <ol class="experience__details">
+            <div class="experience__header">
+              <div>
+                <h3 class="experience__role">Fastlind — Corporate Website</h3>
+                <p class="experience__company">Stack: HTML5, SCSS (BEM), JavaScript (ES6+), Vite</p>
+              </div>
+            </div>
+            <ul class="experience__details">
+              <li>Fully responsive multi-page website with complex layout and interactive elements.</li>
+              <li>Automated workflow using <strong>Vite</strong> for asset optimization and fast development.</li>
+              <li>Implemented dynamic components including touch-optimized sliders, custom dropdowns, and mobile
+                navigation using modular <strong>JavaScript.</strong></li>
+              <li>Clean and maintainable code following <strong>BEM</strong> methodology.</li>
               <li>
-                <a href="https://valholl-layout-71e06e.netlify.app" target="_blank"
-                  rel="noopener noreferrer">https://valholl-layout-71e06e.netlify.app</a>
+                <a href="https://fastlind-layout.netlify.app" target="_blank" rel="noopener noreferrer">Live Demo</a> |
+                <a href="https://github.com/Anton533/fastlind.is" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </li>
+            </ul>
+          </article>
+
+          <article class="experience">
+            <div class="experience__header">
+              <div>
+                <h3 class="experience__role">
+                  Valholl — Real Estate Platform
+                </h3>
+                <p class="experience__company">Stack: HTML5, SCSS (BEM), JavaScript, Gulp, Google Maps API</p>
+              </div>
+            </div>
+            <ul class="experience__details">
+              <li>Created a responsive layout with a filtering system using checkboxes and dynamic text updates.</li>
+              <li>Configured <strong>Swiper.js</strong> sliders with thumbnails and adaptive vertical/horizontal
+                directions.</li>
+              <li>Added <strong>Google Maps</strong> integration and modal windows using the <strong>MicroModal</strong>
+                library.</li>
+              <li>Wrote modular <strong>JavaScript</strong> code using IIFE and optimized UI transitions for better
+                performance.</li>
+              <li>
+                <a href="https://valholl-layout-71e06e.netlify.app" target="_blank" rel="noopener noreferrer">Live
+                  Demo</a> |
+                <a href="https://github.com/Anton533/valholl" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </li>
+            </ul>
+          </article>
+
+          <article class="experience">
+            <div class="experience__header">
+              <div>
+                <h3 class="experience__role">Hellissandur — Tourism Landing Page</h3>
+                <p class="experience__company">Stack: HTML5, SCSS (BEM), JavaScript, Gulp</p>
+              </div>
+            </div>
+            <ul class="experience__details">
+              <li>
+                Developed a responsive landing page with focus on pixel-perfect implementation of complex design
+                elements.
               </li>
               <li>
-                <a href="https://pquick-layout-edf3ef.netlify.app" target="_blank"
-                  rel="noopener noreferrer">https://pquick-layout-edf3ef.netlify.app</a>
+                <a href="https://hellissandur-layout.netlify.app" target="_blank" rel="noopener noreferrer">Live
+                  Demo</a> |
+                <a href="https://github.com/Anton533/hellissandur" target="_blank" rel="noopener noreferrer">GitHub</a>
               </li>
-              <li>
-                <a href="https://hellissandur-layout.netlify.app" target="_blank"
-                  rel="noopener noreferrer">https://hellissandur-layout.netlify.app</a>
-              </li>
-              <li>
-                <a href="https://solarair.tech/" target="_blank" rel="noopener noreferrer">https://solarair.tech</a>
-              </li>
-              <li>
-                <a href="https://bose-products.netlify.app" target="_blank"
-                  rel="noopener noreferrer">https://bose-products.netlify.app</a>
-              </li>
-              <li>
-                <a href="https://fastlind-layout.netlify.app" target="_blank"
-                  rel="noopener noreferrer">https://fastlind-layout.netlify.app</a>
-              </li>
-              <li>
-                <a href="https://forkify-my-recipes.netlify.app" target="_blank"
-                  rel="noopener noreferrer">https://forkify-my-recipes.netlify.app</a>
-              </li>
-              <li>
-                <a href="https://gimli-layout-ce25b1.netlify.app" target="_blank"
-                  rel="noopener noreferrer">https://gimli-layout-ce25b1.netlify.app</a>
-              </li>
-            </ol>
+            </ul>
+          </article>
+
+          <article class="experience">
+            <div class="experience__header">
+              <div>
+                <h3 class="experience__role">Other Projects</h3>
+              </div>
+            </div>
+            <ul class="experience__details">
+              <li><strong>Solar Air</strong> — Industrial equipment website: <a href="https://solarair.tech/"
+                  target="_blank" rel="noopener noreferrer">Live Demo</a></li>
+              <li><strong>P-Quick</strong> — Logistics landing page: <a href="https://pquick-layout-edf3ef.netlify.app"
+                  target="_blank" rel="noopener noreferrer">Live Demo</a></li>
+              <li><strong>Bose Products</strong> — E-commerce product page: <a href="https://bose-products.netlify.app"
+                  target="_blank" rel="noopener noreferrer">Live Demo</a></li>
+              <li><strong>Gimli</strong> — Real Estate Platform: <a href="https://gimli-layout-ce25b1.netlify.app"
+                  target="_blank" rel="noopener noreferrer">Live Demo</a></li>
+            </ul>
           </article>
         </div>
       </section>
-
-
 
       <section class="main-content__section section">
         <h2 class="section__title">Education</h2>
@@ -188,7 +227,13 @@
                 <h3 class="education__degree">Kharkiv Mechanical Engineering Vocational College</h3>
                 <p class="education__school">Junior Specialist</p>
               </div>
-              <time class="education__date">Sep 2006 – June 2010</time>
+              <div class="">
+
+              </div>
+              <div>
+                <time class="education__date" datetime="2006-09">Sep 2006</time> –
+                <time class="education__date" datetime="2010-06">June 2010</time>
+              </div>
             </div>
           </article>
           <article class="education">
@@ -197,18 +242,18 @@
                 <h3 class="education__degree">Kharkiv National University of Civil Engineering and Architecture</h3>
                 <p class="education__school">Bachelor of industrial and civil construction</p>
               </div>
-              <time class="education__date">Sep 2010 – June 2015</time>
+              <div>
+                <time class="education__date" datetime="2010-09">Sep 2010</time> –
+                <time class="education__date" datetime="2015-06">June 2015</time>
+              </div>
             </div>
           </article>
         </div>
       </section>
     </main>
   </div>
-</body>
 
-</html>
-
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

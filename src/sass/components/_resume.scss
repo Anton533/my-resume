@@ -1,6 +1,6 @@
 .resume {
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 60px auto;
   display: flex;
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -58,6 +58,12 @@
     text-decoration: none;
     font-style: normal;
   }
+  &__link {
+    transition: all 0.3s ease-in-out;
+  }
+  &__link:hover {
+    color: #ffca32;
+  }
 
   &__list {
     list-style: none;
@@ -78,19 +84,20 @@
 
 .main-content {
   flex: 1;
-  padding: 50px 50px;
+  padding: 60px 50px;
   color: var(--text-dark);
   background-color: #fefefe;
 
   &__header {
-    margin-block-end: 85px;
+    margin-block-end: 35px;
   }
 
   &__name {
-    font-size: 3.5rem;
+    // font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 700;
     letter-spacing: 2px;
-    margin-block-end: 20px;
+    margin-block-end: 10px;
   }
 
   &__profession {
@@ -114,12 +121,17 @@
     ol {
       margin-block-start: 5px;
       margin-inline-start: 30px;
+
+      li {
+        margin-bottom: 8px;
+      }
     }
   }
 }
 
 .experience,
-.education {
+.education,
+.projects-list {
   margin-bottom: 30px;
 }
 
@@ -137,6 +149,9 @@
   font-weight: bold;
 }
 
+.education__degree {
+  max-width: 520px;
+}
 .experience__company,
 .education__school {
   color: var(--text-gray);
@@ -147,16 +162,32 @@
 .education__date {
   font-size: 0.9rem;
   white-space: nowrap;
-  margin-left: 20px;
+  // margin-left: 20px;
 }
 
 .experience__details {
   a {
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  a:hover {
+    color: rgba(20, 20, 249, 0.8);
   }
 }
 
 .experience__details li {
   // margin-inline-start: 30px;
   margin-bottom: 8px;
+}
+
+.projects-list li {
+  margin-bottom: 8px;
+}
+
+.projects-list {
+  a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+  }
 }
