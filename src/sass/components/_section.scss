@@ -1,0 +1,39 @@
+.section {
+  margin-block-end: 20px;
+
+  @include respond(xxl) {
+    margin-block-end: 40px;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    border-bottom: 3px solid var(--accent-line);
+    padding-bottom: 5px;
+    display: inline-block;
+
+    margin-block-end: 15px;
+
+    @include respond(xs) {
+      font-size: 1.4rem;
+    }
+    @include respond(xxl) {
+      font-size: 1.8rem;
+      margin-block-end: 20px;
+    }
+  }
+  &__content {
+    ul,
+    ol {
+      margin-block-start: 5px;
+      margin-inline-start: 30px;
+
+      @include respond(xxl) {
+      }
+
+      li {
+        font-size: 1rem;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

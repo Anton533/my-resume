@@ -1,0 +1,51 @@
+.main-content {
+  flex: 1;
+  color: var(--text-dark);
+  background-color: #fefefe;
+  padding: 20px;
+
+  @include respond(xs) {
+    padding: 30px 25px;
+  }
+  @include respond(xxl) {
+    padding: 60px 50px;
+  }
+  &__header {
+    margin-block-end: 15px;
+
+    @include respond(xxl) {
+      margin-block-end: 35px;
+    }
+  }
+
+  &__name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    @include respond(340px) {
+      font-size: 1.8rem;
+    }
+    @include respond(xs) {
+      font-size: 2rem;
+    }
+
+    @include respond(xxl) {
+      font-size: 3rem;
+      margin-block-end: 10px;
+    }
+  }
+
+  &__profession {
+    font-size: 1.2rem;
+    color: var(--text-gray);
+
+    @include respond(xs) {
+      font-size: 1.4rem;
+    }
+
+    @include respond(xxl) {
+      font-size: 1.5rem;
+    }
+  }
+}

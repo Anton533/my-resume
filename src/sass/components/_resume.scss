@@ -1,138 +1,43 @@
 .resume {
-  max-width: 1200px;
-  margin: 60px auto;
+  max-width: 380px;
   display: flex;
+  flex-direction: column-reverse;
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   overflow: hidden;
-}
+  margin: 30px auto;
 
-.sidebar {
-  width: 100%;
-  max-width: 400px;
-  background-color: var(--bg-sidebar);
-  color: var(--text-white);
-  padding: 60px;
-
-  &__profile {
-    text-align: center;
-    margin-bottom: 40px;
+  @include respond(sm) {
+    max-width: 480px;
   }
-
-  &__avatar {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid rgba(255, 255, 255, 0.6);
-    margin-inline: auto;
+  @include respond(md) {
+    max-width: 576px;
   }
-
-  &__section {
-    margin-bottom: 40px;
+  @include respond(lg) {
+    max-width: 768px;
   }
-
-  &__title {
-    font-size: 1.5rem;
-    color: var(--text-white);
-    border-bottom: 1px solid #fff;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+  @include respond(xl) {
+    max-width: 1000px;
+    margin: 60px auto;
+    flex-direction: row;
   }
-
-  &__contact-item {
-    margin-bottom: 15px;
-  }
-
-  &__label {
-    display: block;
-    font-weight: 500;
-    font-size: 1rem;
-  }
-
-  &__text,
-  &__link {
-    color: rgba(255, 255, 255, 0.9);
-    text-decoration: none;
-    font-style: normal;
-  }
-  &__link {
-    transition: all 0.3s ease-in-out;
-  }
-  &__link:hover {
-    color: #ffca32;
-  }
-
-  &__list {
-    list-style: none;
-  }
-
-  &__list-item {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-  }
-
-  &__list-item::before {
-    content: '•';
-    margin-right: 10px;
-    color: var(--text-white);
+  @include respond(xxl) {
+    max-width: 1200px;
   }
 }
 
-.main-content {
-  flex: 1;
-  padding: 60px 50px;
-  color: var(--text-dark);
-  background-color: #fefefe;
-
-  &__header {
-    margin-block-end: 35px;
+.experience {
+  padding-block-end: 10px;
+  margin-block-end: 20px;
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba(102, 102, 102, 0.4);
   }
 
-  &__name {
-    // font-size: 3.5rem;
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-block-end: 10px;
+  @include respond(xxl) {
+    border-bottom: none;
+    margin-block-end: 30px;
   }
-
-  &__profession {
-    font-size: 1.5rem;
-    color: var(--text-gray);
-  }
-}
-
-.section {
-  margin-bottom: 40px;
-
-  &__title {
-    font-size: 1.8rem;
-    border-bottom: 3px solid var(--accent-line);
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-    display: inline-block;
-  }
-  &__content {
-    ul,
-    ol {
-      margin-block-start: 5px;
-      margin-inline-start: 30px;
-
-      li {
-        margin-bottom: 8px;
-      }
-    }
-  }
-}
-
-.experience,
-.education,
-.projects-list {
-  margin-bottom: 30px;
 }
 
 .experience__header,
@@ -140,29 +45,56 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 10px;
   margin-bottom: 10px;
 }
 
 .experience__role,
 .education__degree {
-  font-size: 1.2rem;
+  max-width: 360px;
+  font-size: 1.1rem;
   font-weight: bold;
+
+  @include respond(sm) {
+    font-size: 1.2rem;
+  }
+  @include respond(xl) {
+    max-width: 430px;
+  }
+  @include respond(xxl) {
+    max-width: 500px;
+  }
 }
 
-.education__degree {
-  max-width: 520px;
+.education,
+.projects-list {
+  margin-block-end: 30px;
 }
+
 .experience__company,
 .education__school {
   color: var(--text-gray);
   font-style: italic;
 }
 
+.experience__date-wrapper,
+.education__date-wrapper {
+  max-width: 120px;
+  text-align: end;
+
+  @include respond(sm) {
+    max-width: none;
+  }
+}
+
 .experience__date,
 .education__date {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   white-space: nowrap;
   // margin-left: 20px;
+  @include respond(sm) {
+    font-size: 0.9rem;
+  }
 }
 
 .experience__details {
