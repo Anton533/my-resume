@@ -48,3 +48,80 @@ body {
 address {
   font-style: normal;
 }
+
+@media print {
+  body {
+    background: none;
+    background-color: #fff;
+  }
+  .resume {
+    margin: 0;
+    box-shadow: none !important;
+    max-width: 100% !important;
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important; /* Force desktop view for PDF */
+  }
+  .sidebar {
+    max-width: 260px !important;
+    -webkit-print-color-adjust: exact; /* Preserves the sidebar background color */
+    print-color-adjust: exact;
+
+    &__title {
+      font-size: 1.2rem !important;
+    }
+    &__text,
+    &__link {
+      font-size: 0.8rem !important;
+    }
+    &__list {
+      li {
+        font-size: 0.9rem !important;
+      }
+    }
+  }
+
+  .main-content {
+    padding: 20px !important;
+  }
+  .main-content__name {
+    font-size: 2rem !important;
+  }
+  .section__title {
+    font-size: 1.2rem !important;
+  }
+  .section__content {
+    ul {
+      li {
+        font-size: 0.85rem !important;
+      }
+    }
+  }
+  .experience__date-wrapper,
+  .education__date-wrapper,
+  .experience__date,
+  .education__date {
+    font-size: 0.65rem !important;
+  }
+
+  .experience__role {
+    font-size: 1rem !important;
+  }
+  .education__degree {
+    font-size: 0.9rem !important;
+  }
+  .education__school {
+    font-size: 0.85rem !important;
+  }
+
+  .experience__company {
+    font-size: 0.8rem !important;
+  }
+  .experience:not(:last-child) {
+    border-bottom: 1px solid #ccc !important;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
